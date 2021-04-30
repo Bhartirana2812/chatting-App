@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".SettingsActivity">
+
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:tint="@color/white"
+        android:src="@drawable/ic_arrow" />
+
+    <LinearLayout
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/proileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_user" >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/ic_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="Username :"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:textColorHint="@color/white"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="About :"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etabout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+                android:hint="About you"
+                android:textColorHint="@color/white"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:id="@+id/savebtn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Save"
+
+            android:textColor="@color/teal_700"
+            android:background="@drawable/btsave"
+            android:layout_gravity="right">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="40dp"
+        android:drawablePadding="15dp"
+        android:background="@drawable/linearbackground"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Privacy Policy"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:padding="7dp"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableTint="@color/teal_700"
+            
+
+
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/ic_information_button"
+            android:drawableTint="@color/teal_700"
+            android:drawablePadding="15dp"
+
+            android:padding="7dp"
+            android:layout_marginTop="8dp"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite a Friend"
+            android:layout_marginLeft="50dp"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/teal_700"
+            android:layout_marginTop="8dp"
+            android:padding="7dp"
+
+            android:drawableLeft="@drawable/ic_game"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:drawableTint="@color/teal_700"
+            android:textStyle="bold"
+            android:drawablePadding="15dp"
+            android:padding="7dp"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_notification"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_marginLeft="50dp"
+            android:drawableTint="@color/teal_700"
+            android:layout_marginTop="8dp"
+            android:padding="7dp"
+            android:drawablePadding="15dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_question"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

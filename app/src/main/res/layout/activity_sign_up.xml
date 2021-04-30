@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
+    tools:context=".SignUp">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
+        android:gravity="center_horizontal"
+        android:text="GOOD NIGHT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/signup"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnsignup"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            tools:ignore="MissingConstraints,RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="20dp"
+            android:text="Already Have Account"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_outline_message_24"
+            android:hint="Email"
+            tools:ignore="MissingConstraints,RtlCompat" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UnknownId">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/name"
+            android:background="@android:color/transparent"
+            android:hint="Your Name"
+            app:layout_constraintBottom_toTopOf="@+id/Email" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
